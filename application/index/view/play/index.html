@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>playpage</title>
+		<link rel="stylesheet" href="__PUBLIC__/static/index/css/style.css" />
+		<link rel="stylesheet" href="__PUBLIC__/static/index/css/play.css" />
+	</head>
+	<body>
+		<!--通用结构-->
+		<div class="headWrap">
+			<div class="w80p clearfix">
+				<div class="logo fl">
+					<a href="#">Lo</a>
+				</div>
+				<div class="LR fr">
+					<a href="#">登录&nbsp;|&nbsp;</a>
+					<a href="#">注册</a>
+				</div>
+			</div>
+		</div>
+		<!--通用结构结束-->
+		<!--播放区域-->
+		<div class="playMain">
+			<div class="playContainer w80p clearfix">
+				<div class="playView fl">
+					<!--自定义-->
+					<!--<div class="videoPlayer">
+						<video id="myVideo" muted="muted">
+							<source src="video/mov_bbb.mp4" type="video/mp4"></source>
+						</video>
+					</div>
+					<div class="videoControl">
+						<div class="PP fl">播放/暂停</div>
+						<div class="progressBar fl">
+							<div class="timeBar"></div>
+						</div>
+						<div class="voiceContrller fl">
+							<i class="voiceMuted">ㄖ</i>
+							<div class="volumeBar">
+								<div class="volume"></div>
+							</div>
+						</div>
+						<div class="playTime fl">
+							<span class="currtTime">00:00:00</span>/
+							<span class="duraTime">00:00:00</span>
+						</div>
+					</div>-->
+					<!--优酷播放器-->
+						<embed src="http://player.youku.com/player.php/sid/XMTcxODg5Njc5Mg==/v.swf" allowFullScreen="true" quality="high" width="100%" height="400px" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+				</div>
+				<div class="playList fr">
+					<ul class="playTab">
+						<li>选集</li>
+						<li>其他</li>
+					</ul>
+					<div class="playTabItem active">
+						<ul class="playItem-list">
+							<li>当前无内容</li>
+							<li>当前无内容</li>
+						</ul>
+					</div>
+					<div class="playTabItem">
+						TAB PAGE TWO,当前无内容
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="playInfo w80p">
+			<div class="vidImg fl">
+				<img src="img/LieRen.png" alt="vidimage" width="100px" height="120px" />
+			</div>
+			<div class="vidInfo fl">
+				<h2>暂无</h2>
+				<p>类型：</p>
+				<p>导演：</p>
+				<p class="vidIntroduce">
+					简介：这里测试中文文字xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx(共N个)
+				</p>
+				<span class="detail"></span>
+			</div>
+			<div class="vidComment fl">
+				<ul class="comment-list">
+					<li><span>某某：</span>真是一段感人肺腑的智商。</li>
+					<li><span>某某：</span>what you cannot obtain is alwary wear,but often miss what you are have.</li>
+					<li><span>某某：</span>真是一段感人肺腑的智商。</li>
+					<li><span>某某：</span>真是一段感人肺腑的智商。</li>
+					<li><span>某某：</span>真是一段感人肺腑的智商。</li>
+				</ul>
+				<div class="comment-area">
+					<input type="text" class="comment-text" maxlength="50" placeholder="我想说点什么..." />
+					<input type="button" id="comment-btn" value="评论" />
+				</div>
+			</div>
+			
+		</div>
+		<div class="content"></div>
+		<div class="footer">
+			<div class="w80p clearfix">
+				<div class="footerLeft fl">
+					<p>这里写些copyright之类的信息&nbsp;&nbsp;空格之后息</p>
+					<p>这里写些copyright之类的信息&nbsp;&nbsp;空格之后的一些息</p>
+					<p>这里写些copyright之类的信息&nbsp;&nbsp;呃呃呃</p>
+				</div>
+				<div class="footerRight fr">
+					<p>这里放点什么邮箱之类的</p>
+					<p>这里还可以放个电话号码什么的</p>
+					<p>文字或者放个图标</p>
+				</div>
+			</div>
+		</div>
+		<!--引入js-->
+		<script src="__PUBLIC__/static/index/js/jquery.min.js"></script>
+		<!--新建js-->
+		<script src="__PUBLIC__/static/index/js/play.js"></script>
+	</body>
+</html>

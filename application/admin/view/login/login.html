@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎登录</title>
+	<link rel="stylesheet" type="text/css" href="css/login_style.css"/>
+</head>
+<body>
+	<div id="header-height">
+		<div class="wrap">
+			<div class="header-logo">
+				<a class="f1" href="index.html">
+					这里放logo
+				</a>
+				<div class="f1">
+					<img src="img/logon-logofont.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="login-main">
+		<div class="login-content">
+			<div class="login-mian-center">
+				<div class="login-title">
+					<h2>会员登录</h2>
+					<a href="register.html">注册新账号</a>
+				</div>
+				<div id="errorMessage"></div>
+				<div class="username">
+					<input class="user" type="text" placeholder="用户名/手机/邮箱"/>
+				</div>
+				<div class="password">
+					<input class="pass" type="password" placeholder="密码"/>
+				</div>
+				<div class="forget">
+					<a href="#">忘记密码?</a>
+				</div>
+				<button id="btn_login">登录</button>
+			</div>
+		</div>
+	</div>
+	<div id="footer" class="footer">
+		<div class="bottom-nav">
+			<div>
+				<a href="#">关于我们</a><span>|</span>
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">加盟合作</a><span>|</span>
+				<a href="#">诚征英才</a><span>|</span>
+				<a href="#">友情链接</a>
+			</div>
+			<div>
+				写一些地址信息
+			</div>
+		</div>
+		<div class="bottom-contact">
+			联系或者客服qq什么的
+		</div>
+	</div>
+	
+	
+<script src="js/oo.js"></script>
+<script src="js/jquery-1.12.4-min.js"></script>
+<script type="text/javascript">
+$(function () {
+	var user = [],password = [],isUser,index;
+	$(".user").blur(function () {
+		isUser = false;
+		var value = $(this).val()
+
+		for (var i = 0; i < getCookie("usernum") - 1; i++) {
+			user.push(getCookie("username" + (i + 1)));
+			password.push(getCookie("password" + (i + 1)));
+		}
+		//alert(user);
+		for (var j = 0; j < user.length; j++) {
+			if (value != user[j] && value) {
+				//alert(value+"---"+user[j]);
+				$("#errorMessage").text("该用户不存在").show();
+
+			}else {
+				index = j;
+				$("#errorMessage").hide();
+				isUser = true;
+				return;
+			}
+		}
+	});
+	
+	//登录按钮
+	/*$("#btn_login").click(function () {
+		var date = getDate(1);
+		if($(".pass").val() != password[index] && isUser){
+			$("#errorMessage").text("密码错误").show();
+		}else {
+			alert("登录成功");
+			setCookie("loginName",$(".user").val(),date);
+			setCookie("loginBuff","true",date);
+			window.location.href = "index.html";
+			return false;
+		}	
+	})*/
+})
+</script>
+</body>
+</html>

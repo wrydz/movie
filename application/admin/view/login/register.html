@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎注册-百联</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css"/>
+</head>
+<body>
+	<div id="header-height">
+		<div class="wrap">
+			<div class="header-logo">
+				<a class="f1" href="index.html">
+					此处有log
+				</a>
+				<div class="f1">
+					<img src="img/V3login-font4.png"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="mian">
+			<div class="mian-center">
+				<div class="center-top">
+					<h4>您好，感谢您加入XXX电影网</h4>
+					<div class="title-login">
+						如有账号，请点击 
+						<a href="login.html">登录</a>
+					</div>
+				</div>
+				<div class="center-bottom">
+					<div class="registered-info">
+						<form method="post">
+							<div class="box-input">
+								<span><i> * </i>用户名 :</span>
+								<input id="loginId" type="text" placeholder="6-20位字符，支持字母或字母与数字组合" />
+								<ul class="prompt" style="float:left;line-height: 36px;">
+								    <li class="prompt-text">
+										<i>
+											<img width="16" height="16" src="img/v-icon-1.png">
+										</i>
+										<span>请输入用户名</span>
+								    </li>
+								    <li class="prompt-error" style="display:none">
+										<i>
+											<img width="16" height="16" src="img/v-icon-2.png">
+										</i>
+										<span>请输入用户名</span>
+								    </li>
+								    <li class="prompt-correct" style="display:none">
+										<i>
+											<img width="16" height="16" src="img/v-icon-3.png">
+										</i>
+										<span></span>
+								    </li>
+								</ul>
+								<div class="clr"></div>
+							</div>	
+							<div class="box-input">
+								<span><i> * </i>登录密码 :</span>
+								<input id="password" type="password" placeholder="6-20位字符，建议使用字母、符号和数字组合" />
+								<ul class="prompt" style="float:left;line-height: 36px;">
+								    <li class="prompt-text">
+										<i>
+											<img width="16" height="16" src="img/v-icon-1.png">
+										</i>
+										<span>密码强度</span>
+										<i id="strength_L" class="strength-1" style="background:#ccc;">弱</i>
+										<i id="strength_M" class="strength-1" style="background:#ccc;">中</i>
+										<i id="strength_H" class="strength-1" style="background:#ccc;">强</i>
+								    </li>
+								    <li class="prompt-error" style="display:none">
+										<i>
+											<img width="16" height="16" src="img/v-icon-2.png">
+										</i>
+										<span>请输入登陆密码</span>
+								    </li>
+								    <li class="prompt-correct" style="display:none">
+										<i>
+											<img width="16" height="16" src="img/v-icon-3.png">
+										</i>
+										<span>密码强度</span>
+										<i id="strength_L" class="strength-1" style="background:#ff0000;">弱</i>
+										<i id="strength_M" class="strength-1" style="background:#ccc;">中</i>
+										<i id="strength_H" class="strength-1" style="background:#ccc;">强</i>
+								    </li>
+								</ul>
+								<div class="clr"></div>
+							</div>
+							<div class="box-input">
+								<span><i> * </i>确认密码 :</span>
+								<input id="confirmPassword" type="password" placeholder="请再次输入密码" />
+								<ul class="prompt" style="float:left;line-height: 36px;">
+								    <li class="prompt-text">
+										<i>
+											<img width="16" height="16" src="img/v-icon-1.png">
+										</i>
+										<span>请输入确认密码</span>
+								    </li>
+								    <li class="prompt-error" style="display:none">
+										<i>
+											<img width="16" height="16" src="img/v-icon-2.png">
+										</i>
+										<span>请输入确认密码</span>
+								    </li>
+								    <li class="prompt-correct" style="display:none">
+										<i>
+											<img width="16" height="16" src="img/v-icon-3.png">
+										</i>
+										<span></span>
+								    </li>
+								</ul>
+								<div class="clr"></div>
+							</div>
+							<div class="box-input">
+								<span><i> * </i>手机号 :</span>
+								<input id="phone" type="text" placeholder="请输入11位手机号" />
+								<ul class="prompt" style="float:left;line-height: 36px;">
+								    <li class="prompt-text">
+										<i>
+											<img width="16" height="16" src="img/v-icon-1.png">
+										</i>
+										<span>请输入手机号码</span>
+								    </li>
+								    <li class="prompt-error" style="display:none">
+										<i>
+											<img width="16" height="16" src="img/v-icon-2.png">
+										</i>
+										<span>请输入手机号码</span>
+								    </li>
+								    <li class="prompt-correct" style="display:none">
+										<i>
+											<img width="16" height="16" src="img/v-icon-3.png">
+										</i>
+										<span></span>
+								    </li>
+								</ul>
+								<div class="clr"></div>
+							</div>
+							<div class="box-input">
+								<span><i> * </i>验证码 :</span>
+								<input id="verifyCode" type="text" placeholder="请输入验证码" />
+								<b id="ma">1234</b>
+								<a href="#" style="float:left;line-height:36px">换一张</a>
+								<ul class="prompt" style="float:left;line-height: 36px;">
+								    <li class="prompt-text">
+										<i>
+											<img width="16" height="16" src="img/v-icon-1.png">
+										</i>
+										<span>请输入验证码</span>
+								    </li>
+								    <li class="prompt-error" style="display:none">
+										<i>
+											<img width="16" height="16" src="img/v-icon-2.png">
+										</i>
+										<span>验证码错误，请正确输入</span>
+								    </li>
+								    <li class="prompt-correct" style="display:none">
+										<i>
+											<img width="16" height="16" src="img/v-icon-3.png">
+										</i>
+										<span></span>
+								    </li>
+								</ul>
+								<div class="clr"></div>
+							</div>
+							<div class="xieyi">
+								<input id="select" type="checkbox"/>
+								<span>我已阅读并同意 <a href="#">《XXX电影网会员注册协议》</a></span>
+							</div>
+							<div class="btn_box">
+								<button id="register_btn">立即注册 完成绑定</button>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer" class="footer">
+		<div class="bottom-nav">
+			<div>
+				<a href="#">关于我们</a><span>|</span>
+				<a href="#">联系我们</a><span>|</span>
+				<a href="#">加盟合作</a><span>|</span>
+				<a href="#">诚征英才</a><span>|</span>
+				<a href="#">友情链接</a>
+			</div>
+			<div class="copyright">
+				同登录页
+			</div>
+		</div>
+		<div class="bottom-contact">
+			和登录页相同
+		</div>
+	</div>
+	
+	
+	
+	<script src="js/oo.js"></script>
+<script src="js/jquery-1.12.4-min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$("input:not(:last)").on('focus', function() {
+			$(this).css({border:"1px solid #66ccff"}).parents(".box-input").find(".prompt-text").show().siblings('li').hide();
+		});
+		$("input:not(:last)").on('blur',function () {
+			if (!$(this).val()) {
+				$(this).css({border:"1px solid #ff0000"}).parents(".box-input").find(".prompt-error").show().siblings('li').hide();
+			}
+		});
+		var userName,passWord,phone,code,mcode,eMail;
+		$("#loginId").blur(function () {
+			var user = [];
+			userName = false;
+			var value = $(this).val();
+			value = value.split(" ");
+			value = value.join("");
+			if (!value) {
+				$(this).css({border:"1px solid #ff0000"}).parents(".box-input").find(".prompt-error").show().find('span').text("请输入用户名").end().siblings('li').hide();
+				return;
+			}
+			for (var i = 0; i < getCookie("usernum") - 1; i++) {
+				user.push(getCookie("username" + (i + 1)));
+			}
+			//alert(user);
+			for (var j = 0; j < user.length; j++) {
+				if (value == user[j] && value != null) {
+					$(this).css({border:"1px solid #ff0000"}).parents(".box-input").find(".prompt-error").show().find('span').text("该用户名以存在").end().siblings('li').hide();
+					return;
+				}
+			}
+			
+			if (/^[A-Za-z0-9_-]{6,20}$/.test(value)) {
+				$(this).css({border:"1px solid #66ccff"}).parents(".box-input").find(".prompt-correct").show().siblings('li').hide();
+				userName = true;
+			}
+		});
+		$("#password").on("keyup",function() {
+			var value = $(this).val();
+			if(value.length <= 6 || value == null){
+				$(".strength-1").css({background:"#ccc"});
+			}
+			if (value.length > 20) {
+				$(this).css({border:"1px solid #ff0000"}).parents(".box-input").find(".prompt-error").show().find('span').text("密码不符合规则").end().siblings('li').hide();
+			}
+			if (/^[0-9]{6,20}$/.test(value) || /^[a-zA-Z]{6,20}$/.test(value)) {
+				$(this).css({border:"1px solid #66ccff"}).parents(".box-input").find(".prompt-text").show().siblings('li').hide();
+				$(".strength-1").css({background:"#ccc"});
+				$("#strength_L").css({background:"#ff0000"});
+			}
+			//console.log(/^(?![^0-9]+$)(?![^a-zA-Z]+$)[0-9a-zA-Z]+$/.test(value))
+			if (/^(?![^0-9]+$)(?![^a-zA-Z]+$)[0-9a-zA-Z]+$/.test(value)) {
+				
+				$(".strength-1").css({background:"#ccc"});
+				$("#strength_M").css({background:"#f99000"});
+			}
+			if (!/^[0-9a-zA-Z]+$/.test(value) && value != null && value.length > 6) {
+				$(".strength-1").css({background:"#ccc"});
+				$("#strength_H").css({background:"#33cc00"});
+			}
+		});
+		$("#password").focus(function () {
+			$(this).parents(".box-input").find('.prompt-text>i img').attr({"src":"img/v-icon-1.png"});
+		})
+		$("#password").blur(function() {
+			$(this).parents(".box-input").find('.prompt-text>i img').attr({"src":"img/v-icon-3.png"});
+		});
+		$("#confirmPassword").blur(function () {
+			passWord = false;
+			var value1 = $("#password").val();
+			if (!$(this).val()) {
+				$(this).css({border:"1px solid #ff0000"}).parents(".box-input").find(".prompt-error").show().siblings('li').hide();
+				return;
+			}
+			if ($(this).val() === value1) {
+				$(this).css({border:"1px solid #66ccff"}).parents(".box-input").find(".prompt-correct").show().siblings('li').hide();
+				passWord = true;
+			}else {
+				$(this).css({border:"1px solid #ff0000"}).parents(".box-input").find(".prompt-error").show().find('span').text("确认密码和登录密码不一致").end().siblings('li').hide();
+			}
+		});
+		$("#phone").blur(function () {
+			phone = false;
+			var value = $(this).val();
+			if (/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/.test(value)) {
+				$(this).css({border:"1px solid #66ccff"}).parents(".box-input").find(".prompt-correct").show().siblings('li').hide();
+				phone = true;
+			}else {
+				$(this).css({border:"1px solid #ff0000"}).parents(".box-input").find(".prompt-error").show().siblings('li').hide();
+			}
+		});
+		$("#ma").text(authCode(4));
+		$("#ma").siblings("a").on("click",function () {
+			$("#ma").text(authCode(4));
+			return false;
+		})
+		$("#verifyCode").blur(function() {
+			code = false;
+			var value1 = $("#ma").text().toLocaleLowerCase();
+			var value2 = $(this).val().toLocaleLowerCase();
+			if (value2 === value1) {
+				$(this).css({border:"1px solid #66ccff"}).parents(".box-input").find(".prompt-correct").show().siblings('li').hide();
+				code = true;
+			}else {
+				$(this).css({border:"1px solid #ff0000"}).parents(".box-input").find(".prompt-error").show().siblings('li').hide();
+			}
+		});
+		/*$("#mailVerifyCode").blur(function () {
+			mcode = false;
+			if ($(this).val()) {
+				$(this).css({border:"1px solid #66ccff"}).parents(".box-input").find(".prompt-correct").show().siblings('li').hide();
+				mcode = true;
+			}
+		})
+
+		///^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+		$("#e-mail").blur(function () {
+			eMail = false;
+			var value = $(this).val();
+			if (/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(value)) {
+				$(this).css({border:"1px solid #66ccff"}).parents(".box-input").find(".prompt-correct").show().siblings('li').hide();
+				eMail = true;
+			}else {
+				$(this).css({border:"1px solid #ff0000"}).parents(".box-input").find(".prompt-error").show().siblings('li').hide();
+			}
+		});*/
+		
+		
+		
+		var num = 1;
+		$("#register_btn").on("click",function () {
+			
+			var date = getDate(1);
+			if (userName && passWord && phone && code && mcode && eMail) {
+				if (getCookie("usernum")) {
+					num = parseInt(getCookie("usernum"));
+				}
+				setCookie("username" + num,$("#loginId").val(),date);
+				setCookie("password" + num,$("#password").val(),date);
+				setCookie("usernum",num + 1,date);
+				//num++;
+				alert("注册成功！前往登录页");				
+			}else {
+				alert("你的输入有误");
+				return false;
+			}
+			window.location.href = "login.html";
+			return false;	
+		})
+	})
+</script>
+
+</body>
+</html>

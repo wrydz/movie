@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>后台管理</title>
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/admin/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/admin/css/main.css"/>
+        <script type="text/javascript" src="__PUBLIC__/static/admin/js/libs/modernizr.min.js"></script>
+    </head>
+    <body>
+        {include file="public/top" /}
+        <div class="container clearfix">
+            {include file="public/left" /}
+            <!--/sidebar-->
+            <div class="main-wrap">
+
+                <div class="crumb-wrap">
+                    <div class="crumb-list"><i class="icon-font"></i><a href="/jscss/admin/design/">首页</a>
+                        <span class="crumb-step">&gt;</span><a class="crumb-name" href="/jscss/admin/design/">电视剧管理</a>
+                        <span class="crumb-step">&gt;</span><span>新增电视剧</span>
+                    </div>
+                </div>
+                <div class="result-wrap">
+                    <div class="result-content">
+                        <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                            <table class="insert-tab" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th width="10%"><i class="require-red">*</i>电视剧名称：</th>
+                                        <td>
+                                            <input class="common-text required" id="video_name" name="video_name" size="50" value="" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th width="10%"><i class="require-red">*</i>电视剧剧集：</th>
+                                        <td>
+                                            <input class="common-text required" name="volume_num" size="50" value="" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th width="10%"><i class="require-red">*</i>剧集名称：</th>
+                                        <td>
+                                            <input class="common-text required" name="volume_name" size="50" value="" type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class="require-red">*</i>导演：</th>
+                                        <td><input class="common-text" name="director" size="50" value="" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class="require-red">*</i>演员：</th>
+                                        <td><input class="common-text" name="roles" size="50" value="" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class="require-red">*</i>地区：</th>
+                                        <td><input class="common-text" name="area" size="50" value="" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class="require-red">*</i>上映时间：</th>
+                                        <td><input class="common-text" name="start_time" size="50" value="" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class="require-red">*</i>电视剧类型：</th>
+                                        <td><input class="common-text" name="kind_name" size="50" value="" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>视频格式：</th>
+                                        <td><input class="common-text" name="suffix" size="50" value="" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class="require-red">*</i>电视剧封面：</th>
+                                        <td><input name="cover_img" type="file"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class="require-red">*</i>链接地址：</th>
+                                        <td><input class="common-text" name="link" size="50" value="" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <th><i class="require-red">*</i>视频来源：</th>
+                                        <td>
+                                            <select name="src_type">
+                                                <option value="1">爱奇艺</option>
+                                                <option value="2">优酷</option>
+                                                <option value="3">土豆</option>
+                                                <option value="4">百度</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    </tr>
+                                    <tr>
+                                        <th>简介：</th>
+                                        <td>
+                                            <textarea name="intro" class="common-textarea" id="intro" cols="30" style="width: 98%;" rows="10"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>
+                                            <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                            <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <!--/main-->
+        </div>
+    </body>
+</html>
